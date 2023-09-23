@@ -30,12 +30,12 @@ $size-36: 3rem;
 
 // Mixins
 @mixin interactive-scale($color, $bg, $scale: 1.05) {
-  transform: scale(1);
-  transition: transform 350ms ease;
+  scale: 1;
+  transition: scale 350ms ease;
 
   &:hover,
   &:focus {
-    transform: scale($scale);
+    scale: $scale;
     color: $color;
     background-color: $bg;
   }
